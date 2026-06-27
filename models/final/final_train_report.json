@@ -1,0 +1,1012 @@
+{
+  "final_solution": {
+    "all_nba": "HGB classifier + fixed top-15 reorderer",
+    "all_rookie": "HGB classifier",
+    "all_nba_model_path": "/mnt/data/WZUMProject/models/final/final_all_nba_hgb_reorderer.joblib",
+    "all_rookie_model_path": "/mnt/data/WZUMProject/models/final/final_all_rookie_hgb.joblib",
+    "expected_backtest_total": 260.5
+  },
+  "hgb_baseline_backtest": {
+    "config": {
+      "feature_set": "previous_team_share_allstar",
+      "model_name": "hgb_classifier",
+      "weight_mode": "positive_boost",
+      "selection_mode": "expected_label",
+      "team_assignment_mode": "sort_expected_label",
+      "pool_filter": "none",
+      "max_iter": 250,
+      "learning_rate": 0.05,
+      "max_leaf_nodes": 31,
+      "l2_regularization": 0.05
+    },
+    "all_nba": {
+      "award_name": "all_nba",
+      "label_col": "ALL_NBA_LABEL",
+      "max_score": 270,
+      "num_players": 15,
+      "num_features": 83,
+      "feature_columns": [
+        "AGE",
+        "GP",
+        "W",
+        "L",
+        "W_PCT",
+        "MIN",
+        "PTS",
+        "FGM",
+        "FGA",
+        "FG_PCT",
+        "FG3M",
+        "FG3A",
+        "FG3_PCT",
+        "FTM",
+        "FTA",
+        "FT_PCT",
+        "OREB",
+        "DREB",
+        "REB",
+        "AST",
+        "TOV",
+        "STL",
+        "BLK",
+        "BLKA",
+        "PF",
+        "PFD",
+        "PLUS_MINUS",
+        "OFF_RATING",
+        "DEF_RATING",
+        "NET_RATING",
+        "AST_PCT",
+        "AST_TO",
+        "AST_RATIO",
+        "OREB_PCT",
+        "DREB_PCT",
+        "REB_PCT",
+        "TM_TOV_PCT",
+        "EFG_PCT",
+        "TS_PCT",
+        "USG_PCT",
+        "PACE",
+        "PIE",
+        "IS_ROOKIE",
+        "TOTAL_MIN",
+        "TOTAL_PTS",
+        "TOTAL_REB",
+        "TOTAL_AST",
+        "PTS_REB_AST",
+        "STOCKS",
+        "AST_TOV_SIMPLE",
+        "PREV_target_all_nba",
+        "PLAYED_PREVIOUS_SEASON",
+        "PREV_WAS_ALL_NBA",
+        "PREV_ALL_NBA_LABEL",
+        "PREV_ALL_NBA_VOTE_SCORE",
+        "PREV_PTS",
+        "PREV_REB",
+        "PREV_AST",
+        "PREV_STL",
+        "PREV_BLK",
+        "PREV_GP",
+        "PREV_MIN",
+        "PREV_W_PCT",
+        "PREV_TS_PCT",
+        "PREV_USG_PCT",
+        "PREV_PIE",
+        "IS_MULTI_TEAM_PLAYER",
+        "TEAM_PLAYER_COUNT",
+        "TEAM_TOTAL_PTS_RANK",
+        "TEAM_TOTAL_AST_RANK",
+        "TEAM_TOTAL_MIN_RANK",
+        "TEAM_TOTAL_PTS_SHARE",
+        "TEAM_TOTAL_AST_SHARE",
+        "TEAM_TOTAL_MIN_SHARE",
+        "IS_TEAM_TOTAL_PTS_LEADER",
+        "IS_TEAM_TOTAL_MIN_LEADER",
+        "TEAM_TOP3_TOTAL_PTS_FLAG",
+        "TEAM_TOP3_TOTAL_MIN_FLAG",
+        "LEAGUE_TEAM_W_PCT_RANK",
+        "LEAGUE_TEAM_NET_RATING_RANK",
+        "IS_ALL_STAR_THIS_SEASON",
+        "PREV_ALL_STAR",
+        "ALL_STAR_SELECTIONS_BEFORE_SEASON"
+      ],
+      "avg_score": 140.3125,
+      "avg_score_pct": 0.5196759259259259,
+      "avg_hits": 12.3125,
+      "season_results": [
+        {
+          "season": 2010,
+          "score": 138,
+          "top_hits": 13,
+          "score_by_label": {
+            "3": 56,
+            "2": 49,
+            "1": 33
+          },
+          "exact_by_label": {
+            "3": 3,
+            "2": 2,
+            "1": 2
+          }
+        },
+        {
+          "season": 2011,
+          "score": 115,
+          "top_hits": 11,
+          "score_by_label": {
+            "3": 56,
+            "2": 41,
+            "1": 18
+          },
+          "exact_by_label": {
+            "3": 3,
+            "2": 2,
+            "1": 1
+          }
+        },
+        {
+          "season": 2012,
+          "score": 121,
+          "top_hits": 12,
+          "score_by_label": {
+            "3": 48,
+            "2": 41,
+            "1": 32
+          },
+          "exact_by_label": {
+            "3": 3,
+            "2": 2,
+            "1": 1
+          }
+        },
+        {
+          "season": 2013,
+          "score": 164,
+          "top_hits": 12,
+          "score_by_label": {
+            "3": 90,
+            "2": 56,
+            "1": 18
+          },
+          "exact_by_label": {
+            "3": 5,
+            "2": 3,
+            "1": 1
+          }
+        },
+        {
+          "season": 2014,
+          "score": 132,
+          "top_hits": 11,
+          "score_by_label": {
+            "3": 68,
+            "2": 48,
+            "1": 16
+          },
+          "exact_by_label": {
+            "3": 4,
+            "2": 3,
+            "1": 1
+          }
+        },
+        {
+          "season": 2015,
+          "score": 128,
+          "top_hits": 12,
+          "score_by_label": {
+            "3": 48,
+            "2": 56,
+            "1": 24
+          },
+          "exact_by_label": {
+            "3": 3,
+            "2": 3,
+            "1": 1
+          }
+        },
+        {
+          "season": 2016,
+          "score": 143,
+          "top_hits": 13,
+          "score_by_label": {
+            "3": 48,
+            "2": 41,
+            "1": 54
+          },
+          "exact_by_label": {
+            "3": 3,
+            "2": 2,
+            "1": 3
+          }
+        },
+        {
+          "season": 2017,
+          "score": 130,
+          "top_hits": 12,
+          "score_by_label": {
+            "3": 56,
+            "2": 49,
+            "1": 25
+          },
+          "exact_by_label": {
+            "3": 3,
+            "2": 2,
+            "1": 2
+          }
+        },
+        {
+          "season": 2018,
+          "score": 165,
+          "top_hits": 14,
+          "score_by_label": {
+            "3": 56,
+            "2": 41,
+            "1": 68
+          },
+          "exact_by_label": {
+            "3": 3,
+            "2": 2,
+            "1": 4
+          }
+        },
+        {
+          "season": 2019,
+          "score": 127,
+          "top_hits": 13,
+          "score_by_label": {
+            "3": 47,
+            "2": 41,
+            "1": 39
+          },
+          "exact_by_label": {
+            "3": 2,
+            "2": 2,
+            "1": 2
+          }
+        },
+        {
+          "season": 2020,
+          "score": 143,
+          "top_hits": 13,
+          "score_by_label": {
+            "3": 68,
+            "2": 34,
+            "1": 41
+          },
+          "exact_by_label": {
+            "3": 4,
+            "2": 1,
+            "1": 2
+          }
+        },
+        {
+          "season": 2021,
+          "score": 130,
+          "top_hits": 11,
+          "score_by_label": {
+            "3": 66,
+            "2": 56,
+            "1": 8
+          },
+          "exact_by_label": {
+            "3": 4,
+            "2": 3,
+            "1": 0
+          }
+        },
+        {
+          "season": 2022,
+          "score": 148,
+          "top_hits": 13,
+          "score_by_label": {
+            "3": 68,
+            "2": 41,
+            "1": 39
+          },
+          "exact_by_label": {
+            "3": 4,
+            "2": 2,
+            "1": 2
+          }
+        },
+        {
+          "season": 2023,
+          "score": 130,
+          "top_hits": 12,
+          "score_by_label": {
+            "3": 48,
+            "2": 34,
+            "1": 48
+          },
+          "exact_by_label": {
+            "3": 3,
+            "2": 1,
+            "1": 3
+          }
+        },
+        {
+          "season": 2024,
+          "score": 191,
+          "top_hits": 13,
+          "score_by_label": {
+            "3": 90,
+            "2": 68,
+            "1": 33
+          },
+          "exact_by_label": {
+            "3": 5,
+            "2": 4,
+            "1": 2
+          }
+        },
+        {
+          "season": 2025,
+          "score": 140,
+          "top_hits": 12,
+          "score_by_label": {
+            "3": 66,
+            "2": 56,
+            "1": 18
+          },
+          "exact_by_label": {
+            "3": 4,
+            "2": 3,
+            "1": 1
+          }
+        }
+      ]
+    },
+    "all_rookie": {
+      "award_name": "all_rookie",
+      "label_col": "ALL_ROOKIE_LABEL",
+      "max_score": 180,
+      "num_players": 10,
+      "num_features": 80,
+      "feature_columns": [
+        "AGE",
+        "GP",
+        "W",
+        "L",
+        "W_PCT",
+        "MIN",
+        "PTS",
+        "FGM",
+        "FGA",
+        "FG_PCT",
+        "FG3M",
+        "FG3A",
+        "FG3_PCT",
+        "FTM",
+        "FTA",
+        "FT_PCT",
+        "OREB",
+        "DREB",
+        "REB",
+        "AST",
+        "TOV",
+        "STL",
+        "BLK",
+        "BLKA",
+        "PF",
+        "PFD",
+        "PLUS_MINUS",
+        "OFF_RATING",
+        "DEF_RATING",
+        "NET_RATING",
+        "AST_PCT",
+        "AST_TO",
+        "AST_RATIO",
+        "OREB_PCT",
+        "DREB_PCT",
+        "REB_PCT",
+        "TM_TOV_PCT",
+        "EFG_PCT",
+        "TS_PCT",
+        "USG_PCT",
+        "PACE",
+        "PIE",
+        "IS_ROOKIE",
+        "TOTAL_MIN",
+        "TOTAL_PTS",
+        "TOTAL_REB",
+        "TOTAL_AST",
+        "PTS_REB_AST",
+        "STOCKS",
+        "AST_TOV_SIMPLE",
+        "PREV_target_all_nba",
+        "PLAYED_PREVIOUS_SEASON",
+        "PREV_WAS_ALL_NBA",
+        "PREV_ALL_NBA_LABEL",
+        "PREV_ALL_NBA_VOTE_SCORE",
+        "PREV_PTS",
+        "PREV_REB",
+        "PREV_AST",
+        "PREV_STL",
+        "PREV_BLK",
+        "PREV_GP",
+        "PREV_MIN",
+        "PREV_W_PCT",
+        "PREV_TS_PCT",
+        "PREV_USG_PCT",
+        "PREV_PIE",
+        "IS_MULTI_TEAM_PLAYER",
+        "TEAM_PLAYER_COUNT",
+        "TEAM_TOTAL_PTS_RANK",
+        "TEAM_TOTAL_AST_RANK",
+        "TEAM_TOTAL_MIN_RANK",
+        "TEAM_TOTAL_PTS_SHARE",
+        "TEAM_TOTAL_AST_SHARE",
+        "TEAM_TOTAL_MIN_SHARE",
+        "IS_TEAM_TOTAL_PTS_LEADER",
+        "IS_TEAM_TOTAL_MIN_LEADER",
+        "TEAM_TOP3_TOTAL_PTS_FLAG",
+        "TEAM_TOP3_TOTAL_MIN_FLAG",
+        "LEAGUE_TEAM_W_PCT_RANK",
+        "LEAGUE_TEAM_NET_RATING_RANK"
+      ],
+      "avg_score": 116.625,
+      "avg_score_pct": 0.6479166666666667,
+      "avg_hits": 8.625,
+      "season_results": [
+        {
+          "season": 2010,
+          "score": 128,
+          "top_hits": 9,
+          "score_by_label": {
+            "2": 60,
+            "1": 68
+          },
+          "exact_by_label": {
+            "2": 4,
+            "1": 4
+          }
+        },
+        {
+          "season": 2011,
+          "score": 116,
+          "top_hits": 9,
+          "score_by_label": {
+            "2": 68,
+            "1": 48
+          },
+          "exact_by_label": {
+            "2": 4,
+            "1": 3
+          }
+        },
+        {
+          "season": 2012,
+          "score": 116,
+          "top_hits": 9,
+          "score_by_label": {
+            "2": 68,
+            "1": 48
+          },
+          "exact_by_label": {
+            "2": 4,
+            "1": 3
+          }
+        },
+        {
+          "season": 2013,
+          "score": 130,
+          "top_hits": 8,
+          "score_by_label": {
+            "2": 90,
+            "1": 40
+          },
+          "exact_by_label": {
+            "2": 5,
+            "1": 3
+          }
+        },
+        {
+          "season": 2014,
+          "score": 89,
+          "top_hits": 8,
+          "score_by_label": {
+            "2": 48,
+            "1": 41
+          },
+          "exact_by_label": {
+            "2": 3,
+            "1": 2
+          }
+        },
+        {
+          "season": 2015,
+          "score": 116,
+          "top_hits": 9,
+          "score_by_label": {
+            "2": 68,
+            "1": 48
+          },
+          "exact_by_label": {
+            "2": 4,
+            "1": 3
+          }
+        },
+        {
+          "season": 2016,
+          "score": 82,
+          "top_hits": 8,
+          "score_by_label": {
+            "2": 56,
+            "1": 26
+          },
+          "exact_by_label": {
+            "2": 3,
+            "1": 1
+          }
+        },
+        {
+          "season": 2017,
+          "score": 116,
+          "top_hits": 9,
+          "score_by_label": {
+            "2": 68,
+            "1": 48
+          },
+          "exact_by_label": {
+            "2": 4,
+            "1": 3
+          }
+        },
+        {
+          "season": 2018,
+          "score": 150,
+          "top_hits": 9,
+          "score_by_label": {
+            "2": 90,
+            "1": 60
+          },
+          "exact_by_label": {
+            "2": 5,
+            "1": 4
+          }
+        },
+        {
+          "season": 2019,
+          "score": 101,
+          "top_hits": 8,
+          "score_by_label": {
+            "2": 68,
+            "1": 33
+          },
+          "exact_by_label": {
+            "2": 4,
+            "1": 2
+          }
+        },
+        {
+          "season": 2020,
+          "score": 93,
+          "top_hits": 7,
+          "score_by_label": {
+            "2": 68,
+            "1": 25
+          },
+          "exact_by_label": {
+            "2": 4,
+            "1": 2
+          }
+        },
+        {
+          "season": 2021,
+          "score": 116,
+          "top_hits": 9,
+          "score_by_label": {
+            "2": 68,
+            "1": 48
+          },
+          "exact_by_label": {
+            "2": 4,
+            "1": 3
+          }
+        },
+        {
+          "season": 2022,
+          "score": 101,
+          "top_hits": 8,
+          "score_by_label": {
+            "2": 68,
+            "1": 33
+          },
+          "exact_by_label": {
+            "2": 4,
+            "1": 2
+          }
+        },
+        {
+          "season": 2023,
+          "score": 116,
+          "top_hits": 9,
+          "score_by_label": {
+            "2": 68,
+            "1": 48
+          },
+          "exact_by_label": {
+            "2": 4,
+            "1": 3
+          }
+        },
+        {
+          "season": 2024,
+          "score": 116,
+          "top_hits": 9,
+          "score_by_label": {
+            "2": 68,
+            "1": 48
+          },
+          "exact_by_label": {
+            "2": 4,
+            "1": 3
+          }
+        },
+        {
+          "season": 2025,
+          "score": 180,
+          "top_hits": 10,
+          "score_by_label": {
+            "2": 90,
+            "1": 90
+          },
+          "exact_by_label": {
+            "2": 5,
+            "1": 5
+          }
+        }
+      ]
+    },
+    "avg_total_score": 256.9375,
+    "avg_total_score_pct": 0.5709722222222222,
+    "season_total_results": [
+      {
+        "season": 2010,
+        "all_nba_score": 138,
+        "all_rookie_score": 128,
+        "total_score": 266
+      },
+      {
+        "season": 2011,
+        "all_nba_score": 115,
+        "all_rookie_score": 116,
+        "total_score": 231
+      },
+      {
+        "season": 2012,
+        "all_nba_score": 121,
+        "all_rookie_score": 116,
+        "total_score": 237
+      },
+      {
+        "season": 2013,
+        "all_nba_score": 164,
+        "all_rookie_score": 130,
+        "total_score": 294
+      },
+      {
+        "season": 2014,
+        "all_nba_score": 132,
+        "all_rookie_score": 89,
+        "total_score": 221
+      },
+      {
+        "season": 2015,
+        "all_nba_score": 128,
+        "all_rookie_score": 116,
+        "total_score": 244
+      },
+      {
+        "season": 2016,
+        "all_nba_score": 143,
+        "all_rookie_score": 82,
+        "total_score": 225
+      },
+      {
+        "season": 2017,
+        "all_nba_score": 130,
+        "all_rookie_score": 116,
+        "total_score": 246
+      },
+      {
+        "season": 2018,
+        "all_nba_score": 165,
+        "all_rookie_score": 150,
+        "total_score": 315
+      },
+      {
+        "season": 2019,
+        "all_nba_score": 127,
+        "all_rookie_score": 101,
+        "total_score": 228
+      },
+      {
+        "season": 2020,
+        "all_nba_score": 143,
+        "all_rookie_score": 93,
+        "total_score": 236
+      },
+      {
+        "season": 2021,
+        "all_nba_score": 130,
+        "all_rookie_score": 116,
+        "total_score": 246
+      },
+      {
+        "season": 2022,
+        "all_nba_score": 148,
+        "all_rookie_score": 101,
+        "total_score": 249
+      },
+      {
+        "season": 2023,
+        "all_nba_score": 130,
+        "all_rookie_score": 116,
+        "total_score": 246
+      },
+      {
+        "season": 2024,
+        "all_nba_score": 191,
+        "all_rookie_score": 116,
+        "total_score": 307
+      },
+      {
+        "season": 2025,
+        "all_nba_score": 140,
+        "all_rookie_score": 180,
+        "total_score": 320
+      }
+    ]
+  },
+  "all_nba_reorderer_backtest": {
+    "name": "reorderer",
+    "config": {
+      "base_feature_set": "previous_team_share_allstar",
+      "base_weight_mode": "positive_boost",
+      "base_selection_score_col": "EXPECTED_LABEL",
+      "base_max_iter": 250,
+      "base_learning_rate": 0.05,
+      "base_max_leaf_nodes": 31,
+      "base_l2_regularization": 0.05,
+      "candidate_pool_start_season": 2005,
+      "reorderer_model_type": "classifier",
+      "reorderer_max_iter": 150,
+      "reorderer_learning_rate": 0.03,
+      "reorderer_max_leaf_nodes": 15,
+      "reorderer_l2_regularization": 0.05,
+      "reorderer_weight_mode": "team_weighted",
+      "reorderer_target_mode": "spaced",
+      "blend_weight": 0.25,
+      "use_original_features": true
+    },
+    "avg_score": 143.875,
+    "avg_hits": 12.3125,
+    "avg_first_exact": 3.625,
+    "avg_second_exact": 2.5625,
+    "avg_third_exact": 1.8125,
+    "season_results": [
+      {
+        "season": 2010,
+        "score": 138,
+        "top_hits": 13,
+        "first_exact": 3,
+        "second_exact": 2,
+        "third_exact": 2,
+        "first_score": 56,
+        "second_score": 49,
+        "third_score": 33
+      },
+      {
+        "season": 2011,
+        "score": 115,
+        "top_hits": 11,
+        "first_exact": 3,
+        "second_exact": 2,
+        "third_exact": 1,
+        "first_score": 56,
+        "second_score": 41,
+        "third_score": 18
+      },
+      {
+        "season": 2012,
+        "score": 121,
+        "top_hits": 12,
+        "first_exact": 3,
+        "second_exact": 2,
+        "third_exact": 1,
+        "first_score": 48,
+        "second_score": 41,
+        "third_score": 32
+      },
+      {
+        "season": 2013,
+        "score": 164,
+        "top_hits": 12,
+        "first_exact": 5,
+        "second_exact": 3,
+        "third_exact": 1,
+        "first_score": 90,
+        "second_score": 56,
+        "third_score": 18
+      },
+      {
+        "season": 2014,
+        "score": 132,
+        "top_hits": 11,
+        "first_exact": 4,
+        "second_exact": 3,
+        "third_exact": 1,
+        "first_score": 68,
+        "second_score": 48,
+        "third_score": 16
+      },
+      {
+        "season": 2015,
+        "score": 128,
+        "top_hits": 12,
+        "first_exact": 3,
+        "second_exact": 3,
+        "third_exact": 1,
+        "first_score": 48,
+        "second_score": 56,
+        "third_score": 24
+      },
+      {
+        "season": 2016,
+        "score": 148,
+        "top_hits": 13,
+        "first_exact": 3,
+        "second_exact": 3,
+        "third_exact": 3,
+        "first_score": 48,
+        "second_score": 48,
+        "third_score": 52
+      },
+      {
+        "season": 2017,
+        "score": 130,
+        "top_hits": 12,
+        "first_exact": 3,
+        "second_exact": 2,
+        "third_exact": 2,
+        "first_score": 56,
+        "second_score": 49,
+        "third_score": 25
+      },
+      {
+        "season": 2018,
+        "score": 184,
+        "top_hits": 14,
+        "first_exact": 4,
+        "second_exact": 3,
+        "third_exact": 4,
+        "first_score": 68,
+        "second_score": 48,
+        "third_score": 68
+      },
+      {
+        "season": 2019,
+        "score": 134,
+        "top_hits": 13,
+        "first_exact": 2,
+        "second_exact": 3,
+        "third_exact": 2,
+        "first_score": 39,
+        "second_score": 56,
+        "third_score": 39
+      },
+      {
+        "season": 2020,
+        "score": 155,
+        "top_hits": 13,
+        "first_exact": 4,
+        "second_exact": 3,
+        "third_exact": 2,
+        "first_score": 66,
+        "second_score": 56,
+        "third_score": 33
+      },
+      {
+        "season": 2021,
+        "score": 130,
+        "top_hits": 11,
+        "first_exact": 4,
+        "second_exact": 3,
+        "third_exact": 0,
+        "first_score": 66,
+        "second_score": 56,
+        "third_score": 8
+      },
+      {
+        "season": 2022,
+        "score": 150,
+        "top_hits": 13,
+        "first_exact": 4,
+        "second_exact": 2,
+        "third_exact": 2,
+        "first_score": 68,
+        "second_score": 49,
+        "third_score": 33
+      },
+      {
+        "season": 2023,
+        "score": 142,
+        "top_hits": 12,
+        "first_exact": 4,
+        "second_exact": 1,
+        "third_exact": 3,
+        "first_score": 68,
+        "second_score": 26,
+        "third_score": 48
+      },
+      {
+        "season": 2024,
+        "score": 198,
+        "top_hits": 13,
+        "first_exact": 5,
+        "second_exact": 4,
+        "third_exact": 3,
+        "first_score": 90,
+        "second_score": 60,
+        "third_score": 48
+      },
+      {
+        "season": 2025,
+        "score": 133,
+        "top_hits": 12,
+        "first_exact": 4,
+        "second_exact": 2,
+        "third_exact": 1,
+        "first_score": 60,
+        "second_score": 41,
+        "third_score": 32
+      }
+    ]
+  },
+  "configs": {
+    "hgb_all_nba": {
+      "feature_set": "previous_team_share_allstar",
+      "model_name": "hgb_classifier",
+      "weight_mode": "positive_boost",
+      "selection_mode": "expected_label",
+      "team_assignment_mode": "sort_expected_label",
+      "pool_filter": "none",
+      "max_iter": 250,
+      "learning_rate": 0.05,
+      "max_leaf_nodes": 31,
+      "l2_regularization": 0.05
+    },
+    "hgb_all_rookie": {
+      "feature_set": "previous_team_share",
+      "model_name": "hgb_classifier",
+      "weight_mode": "positive_boost",
+      "selection_mode": "expected_label",
+      "team_assignment_mode": "sort_expected_label",
+      "pool_filter": "none",
+      "max_iter": 250,
+      "learning_rate": 0.05,
+      "max_leaf_nodes": 31,
+      "l2_regularization": 0.05
+    },
+    "all_nba_reorderer": {
+      "base_feature_set": "previous_team_share_allstar",
+      "base_weight_mode": "positive_boost",
+      "base_selection_score_col": "EXPECTED_LABEL",
+      "base_max_iter": 250,
+      "base_learning_rate": 0.05,
+      "base_max_leaf_nodes": 31,
+      "base_l2_regularization": 0.05,
+      "candidate_pool_start_season": 2005,
+      "reorderer_model_type": "classifier",
+      "reorderer_max_iter": 150,
+      "reorderer_learning_rate": 0.03,
+      "reorderer_max_leaf_nodes": 15,
+      "reorderer_l2_regularization": 0.05,
+      "reorderer_weight_mode": "team_weighted",
+      "reorderer_target_mode": "spaced",
+      "blend_weight": 0.25,
+      "use_original_features": true
+    }
+  }
+}

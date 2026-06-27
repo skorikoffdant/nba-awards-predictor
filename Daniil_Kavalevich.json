@@ -1,0 +1,42 @@
+{
+  "season": 2026,
+  "all_nba": {
+    "first": [
+      "Shai Gilgeous-Alexander",
+      "Luka Dončić",
+      "Nikola Jokić",
+      "Kawhi Leonard",
+      "Victor Wembanyama"
+    ],
+    "second": [
+      "Jaylen Brown",
+      "Cade Cunningham",
+      "Donovan Mitchell",
+      "Kevin Durant",
+      "Jamal Murray"
+    ],
+    "third": [
+      "Jalen Brunson",
+      "Tyrese Maxey",
+      "Alperen Sengun",
+      "Jalen Johnson",
+      "Karl-Anthony Towns"
+    ]
+  },
+  "all_rookie": {
+    "first": [
+      "Cooper Flagg",
+      "Kon Knueppel",
+      "VJ Edgecombe",
+      "Cedric Coward",
+      "Maxime Raynaud"
+    ],
+    "second": [
+      "Ace Bailey",
+      "Dylan Harper",
+      "Jeremiah Fears",
+      "Derik Queen",
+      "Collin Murray-Boyles"
+    ]
+  }
+}
